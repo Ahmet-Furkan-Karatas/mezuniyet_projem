@@ -143,7 +143,6 @@ async def öneri(ctx):
         title = match.group(1).strip()
         desc = match.group(2).strip()
 
-        # Başlık 256 karakterden uzun olmasın
         if len(title) > 256:
             title = title[:253] + "..."
 
